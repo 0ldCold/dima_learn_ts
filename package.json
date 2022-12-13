@@ -2,6 +2,7 @@
   "name": "dima_learn_ts",
   "version": "1.0.0",
   "description": "Project react app",
+  "private": "true",
   "scripts": {
     "start": "webpack serve",
     "dev": "webpack serve",
