@@ -1,5 +1,5 @@
 {
-  "name": "Project",
+  "name": "dima_learn_ts",
   "version": "1.0.0",
   "description": "Project react app",
   "scripts": {
@@ -7,7 +7,8 @@
     "dev": "webpack serve",
     "prod": "webpack serve --mode=production",
     "build": "webpack --mode=production",
-    "lint": " eslint src/**/*.ts{,x}",
+    "lint": "eslint src/**/*.ts{,x}",
+    "types": "tsc --noEmit && eslint -c .eslintrc.js",
     "coverage": "tsc",
     "prepare": "husky install",
     "prettier": "prettier --write ."
