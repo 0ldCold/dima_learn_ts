@@ -2,17 +2,22 @@ import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 const Main = React.lazy(
-  () => import(/* webpackChunkName: "Main", webpackPrefetch: true */ "scene/Main/Main")
+  () =>
+    import(/* webpackChunkName: "Main", webpackPrefetch: true */ "src/anotherCode/scene/Main/Main")
 );
 
 const Secondary = React.lazy(
   () =>
-    import(/* webpackChunkName: "Secondary", webpackPrefetch: true */ "scene/Secondary/Secondary")
+    import(
+      /* webpackChunkName: "Secondary", webpackPrefetch: true */ "src/anotherCode/scene/Secondary/Secondary"
+    )
 );
 
 const NotFound = React.lazy(
   () =>
-    import(/* webpackChunkName: "NotFound", webpackPrefetch: true */ "components/NotFound/NotFound")
+    import(
+      /* webpackChunkName: "NotFound", webpackPrefetch: true */ "src/anotherCode/components/NotFound/NotFound"
+    )
 );
 
 const RoutesContainer: React.FC = (): React.ReactElement => {

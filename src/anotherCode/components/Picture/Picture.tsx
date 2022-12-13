@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "store/index";
+import { RootState } from "src/anotherCode/store";
 
 interface Props {
   title: string;

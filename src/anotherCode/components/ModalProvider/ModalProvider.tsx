@@ -1,8 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
 import { useDispatch, useSelector } from "react-redux";
-import { actionSetModal } from "store/actions/app";
-import { RootState } from "store/index";
+import { actionSetModal } from "src/anotherCode/store/actions/app";
+import { RootState } from "src/anotherCode/store";
 
 Modal.setAppElement("#root");
 

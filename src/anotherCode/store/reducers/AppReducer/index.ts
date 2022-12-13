@@ -1,6 +1,6 @@
-import { AppActionTypes } from "store/actions/app/types";
-import { SET_MODAL } from "../../constants/app";
-import { AppInitialStateType } from "./types";
+import { AppActionTypes } from "src/anotherCode/store/actions/app/types";
+import { SET_MODAL } from "src/anotherCode/store/constants/app";
+import { AppInitialStateType } from "src/anotherCode/store/reducers/AppReducer/types";
 
 const initialState: AppInitialStateType = {
   modal: "disabled",

@@ -1,8 +1,8 @@
-import { AppInitialStateType } from "reducers/AppReducer/types";
+import { AppInitialStateType } from "src/anotherCode/store/reducers/AppReducer/types";
 import { Action, applyMiddleware, combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension/developmentOnly";
 import thunkMiddleware, { ThunkAction } from "redux-thunk";
-import AppReducer from "./reducers/AppReducer";
+import AppReducer from "src/anotherCode/store/reducers/AppReducer";
 
 const allReducers = combineReducers({
   app: AppReducer
